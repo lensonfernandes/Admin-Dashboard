@@ -3,4 +3,40 @@
 @import "./node_modules/bootstrap/scss/mixins";
 
 $body-bg : #f8f8fb;
+$container-bg: #fff;
+
+//Colors
+
+$purple: #a855f7;
+$white: #fff;
+$blue: #3258F2;
+$lightBlue: #A0EADE;
+$cambridgeBlue:#BFD2BF;
+$orange:#F2545B;
+$red:#A93F55;
+$green:#646F4B;
+
+$colors: (
+    "purple" : $purple,
+    "orange" : $orange,
+    "blue" :$blue,
+    "red":$red,
+    "lightBlue":$lightBlue,
+    "cambridgeBlue":$cambridgeBlue,
+    "green":$green
+);
+
+//Variants
+$primary : $purple;
+$secondary: $lightBlue;
+$success: $green;
+
+$theme-colors: (
+    "primary" : $primary,
+    "secondary":$secondary,
+    "success":$success
+);
+
+$theme-colors-rgb: map-loop($theme-colors, to-rgb, "$value");
+
 @import "./node_modules/bootstrap/scss/bootstrap";

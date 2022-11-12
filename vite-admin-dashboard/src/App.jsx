@@ -4,8 +4,12 @@ import './App.css'
 import "./assets/scss/app.scss";
 import Dashboard from '../pages/Dashboard';
 import {BrowserRouter as Router, Route, Link, Routes} from "react-router-dom"
+import {fas} from '@fortawesome/free-solid-svg-icons'
+import {library} from '@fortawesome/fontawesome-svg-core'
 
 function App() {
+
+  library.add(fas);
   const [count, setCount] = useState(0)
 
   return (
